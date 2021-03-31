@@ -1,0 +1,21 @@
+<div  class="container" >
+  <h2 class="text-center">{{title}}</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <button (click)='showdemo()' class="btn btn-danger"> Data Binding Demo</button>
+      </div>
+       <div class="col-md-6">
+         <button (click)='showdirectivedemo()' class="btn btn-warning"> Structural Directive Demo</button>
+      </div>
+    </div>
+<hr>
+
+  <div class="row">
+    <div class="col-md-12">
+    <app-hello *ngIf="showDataBindingDemo"></app-hello>
+    <app-product *ngIf="showDirectiveDemo"></app-product> 
+  </div>
+  </div>
+
+
+
