@@ -9,14 +9,23 @@ export class AppComponent {
   title = 'Data Binding';
   showDataBindingDemo = true;
   showDirectiveDemo = false;
+  showPurchase = false;
   showdemo() : void
   {
     this.showDataBindingDemo = true;
     this.showDirectiveDemo = false;
+    this.showPurchase = false;
+
   }
 
   showdirectivedemo(): void {
     this.showDataBindingDemo = false;
     this.showDirectiveDemo = true;
+    this.showPurchase = false;
+  }
+  showpurchase() : void {
+    this.showDataBindingDemo = false;
+    this.showDirectiveDemo = false;
+    this.showPurchase = true;
   }
 }

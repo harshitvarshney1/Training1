@@ -1,11 +1,14 @@
 <div  class="container" >
   <h2 class="text-center">{{title}}</h2>
     <div class="row">
-      <div class="col-md-6">
+      <div class="col-md-4">
         <button (click)='showdemo()' class="btn btn-danger"> Data Binding Demo</button>
       </div>
-       <div class="col-md-6">
+       <div class="col-md-4">
          <button (click)='showdirectivedemo()' class="btn btn-warning"> Structural Directive Demo</button>
+      </div>
+      <div class="col-md-4">
+        <button (click)='showpurchase()' class="btn btn-info"> Master</button>
       </div>
     </div>
 <hr>
@@ -13,9 +16,10 @@
   <div class="row">
     <div class="col-md-12">
     <app-hello *ngIf="showDataBindingDemo"></app-hello>
-    <app-product *ngIf="showDirectiveDemo"></app-product> 
+    <app-product *ngIf="showDirectiveDemo"></app-product>
+    <app-purchase *ngIf="showPurchase"></app-purchase>
   </div>
-  </div>
+</div>
 
 
 
