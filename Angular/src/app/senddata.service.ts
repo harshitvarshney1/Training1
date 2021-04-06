@@ -1,3 +1,4 @@
+import { THIS_EXPR } from '@angular/compiler/src/output/output_ast';
 import { Injectable } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
 import {Product} from './product/iProduct';
@@ -5,6 +6,11 @@ import {Product} from './product/iProduct';
   providedIn: 'root'
 })
 export class SenddataService {
+  updateProduct(products: Product) {
+    this.product = products;
+    this.product$.next(this.product);
+    
+  }
 
   product = {
     Id : 1,

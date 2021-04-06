@@ -1,5 +1,19 @@
 <h2>Data Show</h2>
 <div class="row">
+      <div class="col-md-4">
+        <input class="form-control  " type="text" [(ngModel)]= "searchtext" placeholder="Search by title"/>
+        
+      </div>
+      <div class="col-md-4">
+ 
+      </div>
+      <div class="col-md-4">
+        
+        <input  class="form-control " type= "number" [(ngModel)]= "filterprice" placeholder="Search by price"/>
+      </div>
+  </div>
+<br/>
+<div class="row">
     <table class="table table-striped">
         <thead class="thead-dark">
             <tr>
@@ -25,7 +39,7 @@
             </tr>
         </thead>
         <tbody>
-            <tr *ngFor ="let p of products">
+            <tr *ngFor ="let p of products | productsearch: searchtext | custompipe : filterprice">
                 <td>{{p.ID}}</td>
                 <td>{{p.Title}}</td>
                 <td>{{p.Price | currency :"INR"}}</td>
