@@ -1,0 +1,56 @@
+<br>
+<div  class="container" >
+  <h2 class="text-danger">Angular Project Demo</h2>
+ <div class="container-fluid">
+  <div class="row">
+    <nav class="navbar navbar-expand-lg navbar-dark  harshit" >
+      <a class="navbar-brand" routerLink ="/home">Harshit</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link"  routerLink ="/databinding">Data Binding <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink ="/products">Structural Direc</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink ="/masterdetails">Master Details</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " routerLink ="/sharedata" >Share Data</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"  routerLink ="/attributedirective"  >Attribute Directive</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link "  routerLink ="/generateerror"> Generate Er</a>
+          </li>
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" routerLink='/allSubject' id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            RXJS
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="rxjs">Subject</a>
+            <a class="dropdown-item" href="behaviour"> Behaviour Subject</a>
+            
+            <a class="dropdown-item" href="replay">Replay Subject</a>
+            <a class="dropdown-item" href="async">Async Subject</a>
+            </div>
+            </li>
+
+          <li class="nav-item">
+            <a class="nav-link "  routerLink ="/login"> Login</a>
+          </li>
+          
+        </ul>
+      </div>
+    </nav>
+    <br>
+  </div>
+</div>
+<router-outlet></router-outlet>  
+</div>
